@@ -1,0 +1,6 @@
+logs
+target
+.*
+!/.gitignore
+RUNNING_PID
+bin/

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="shortcut icon" type="image/png" href='@routes.Assets.versioned("images/favicon.png")'/>
+        <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/style.css")'/>
+        <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/AskPage.css")'/>
+        <title>Jask</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Jask </a>
+                </li>
+                 <li>
+                    <a href="/login">登入</a>
+                </li>
+                <li>
+                    <a href="/login">註冊</a>
+                </li>
+                
+            </ul>
+            <form id="search" autocomplete="off">
+                <input type="text" placeholder="搜尋" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                <input type="submit" value="搜尋" />
+            </form>
+            <ul id="Login">
+                <li>
+                    <a href="#" id="username"></a>
+                </li>
+                <li>
+                    <a href="/logout" id="logout"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <div>
+                <form id="askForm" autocomplete="off">
+                    <input name="title" type="text" placeholder="標題" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" /><br/><br/>
+                    <textarea name="body" placeholder="問題描述，支援 Markdown 語法，支援 $inline TeX$ 語法" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea> <br/>
+                    <input type="submit" value="提交" />
+                </form>
+            </div>
+
+            <div id="markdown">
+            </div>
+        </article>
+
+        <footer>
+            ©Jask - present
+        </footer>
+        <script src='@routes.Assets.versioned("javascripts/IndexPage.js")'></script>
+        <script src='@routes.Assets.versioned("javascripts/marked.js")'></script>
+        <script src='@routes.Assets.versioned("javascripts/AskPage.js")'></script>
+    </body>
+</html>

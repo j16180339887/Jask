@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="shortcut icon" type="image/png" href='/assets/images/favicon.png'/>
+        <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/style.css")'/>
+        <title>Jask</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Jask </a>
+                </li>
+                 <li>
+                    <a href="/login">登入</a>
+                </li>
+                <li>
+                    <a href="/login">註冊</a>
+                </li>
+                
+            </ul>
+            <form id="search" autocomplete="off">
+                <input type="text" placeholder="搜尋" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                <input type="submit" value="搜尋" />
+            </form>
+            <ul id="Login">
+                <li>
+                    <a href="#" id="username"></a>
+                </li>
+                <li>
+                    <a href="/logout" id="logout"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Jask</h1>
+            <br/>
+            <h4>Jask 是一個由 Jask 團隊創立的知識問答網站，任何問題都可以發佈於此</h4>
+            <br/>
+            <a href="/login"><button><h3>登入 / 註冊 »</h3></button></a>
+        </article>
+
+        <section>
+            <div>
+                <h2>發問</h2>
+                <p>發問一個問題</p>
+                <p><a href="/ask" role="button">發問 »</a></p>
+            </div>
+            <div>
+                <h2>回答</h2>
+                <p>瀏覽現在有哪些問題</p>
+                <p><a href="/questions" role="button">回答 »</a></p>
+            </div>
+            <div>
+                <h2>聯絡</h2>
+                <p>聯絡製作團隊</p>
+                <p><a href="#" role="button">聯絡 »</a></p>
+            </div>
+        </section>
+
+        <footer>
+            ©Jask - present
+        </footer>
+        <script src='@routes.Assets.versioned("javascripts/IndexPage.js")'></script>
+        <script src='@routes.Assets.versioned("javascripts/LogoutPage.js")'></script>
+    </body>
+</html>

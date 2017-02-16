@@ -1,0 +1,40 @@
+@media screen and (orientation:portrait) {
+    article {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+@media screen and (orientation:landscape) {
+    article {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+}
+
+article {
+    height: initial;
+    padding-top: 27vh;
+    padding-bottom: 26vh;
+}
+
+article ul {
+    list-style: none;
+}
+
+article li a {
+    color: white;
+    font-size: 5vh;
+    font-family:"Anonymous Pro", "Consolas", "DejaVu Mono", "Droid Sans Mono", "Hack",
+                "Inconsolata", "Inconsolata-g", "Liberation Mono", "Menlo", "Mononoki",
+                "Roboto", "Source Code Pro Extra Light", "Source Code Pro Light",
+                "Source Code Pro Medium", "Source Code Pro", "Ubuntu Mono", monospace;
+}
+
+article li a:active {
+    position:relative;
+    top:0.5vh;
+}
+
+footer {
+    padding: 0;
+}
